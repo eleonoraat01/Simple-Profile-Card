@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ffe6ee; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #121212;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.main-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://scontent.fsof9-1.fna.fbcdn.net/v/t1.6435-9/67419422_2341647835919982_5295006914264956928_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ttB0xHVCDkQAX_91SpB&tn=eatazM0ywj00SjLN&_nc_ht=scontent.fsof9-1.fna&oh=00_AT-Mwyw1n1BFNHrGzVv5JsAXetjB3JfZUvA409o9dIarTg&oe=61F17991")
+    center / cover;
+  transition: 0.7s ease;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #121212 6%, transparent);
+  opacity: 0;
+  transition: 0.7s ease;
+  z-index: 1;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  height: 110px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  opacity: 0;
+  transition: 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+#name {
+  font-weight: bolder;
+}
+
+.main-container:hover .info {
+  opacity: 1;
+}
+
+.main-container:hover::after {
+  transition: scale(1.06);
+}
