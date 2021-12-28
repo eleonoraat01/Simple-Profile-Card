@@ -3,7 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #ffe6ee; */
+  background-color: #ffe6ee;
 }
 
 * {
