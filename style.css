@@ -26,7 +26,12 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background: url("/src/img/picture.jpg");
+=======
+  background: url("https://avatars.githubusercontent.com/u/83947623?s=400&u=69532b444a06d8dc491b2c185159b34e2ce739d3&v=4")
+    center / cover;
+>>>>>>> 864cd2db66ec560dae05b1905e3fe67c19c91038
   transition: 0.7s ease;
 }
 
